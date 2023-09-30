@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+@layer utilities {
+  .padding {
+    @apply sm:px-16 sm:py-24 py-12;
+  }
+
+  .padding-inline {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-block {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-right {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-left {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-top {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-bottom {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-mono text-slate-gray text-lg leading-7;
+  }
+}
